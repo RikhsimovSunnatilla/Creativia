@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 700px;
+    background: url(../img/backgrounds/header.png) center -40px no-repeat;
+    background-size: cover;
+
+    &__intro {
+        width: 100%;
+        max-width: 1030px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .section__text {
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 50px;
+    }
+        
+    .btn.btn-dark:first-of-type {
+        margin-right: 30px;
+    }
+
+    .slider {
+        font-size: 45px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+        
+        &--left {
+            left: 50px;
+        }
+
+        &--right {
+            right: 50px;
+        }
+
+        a {
+            color: $grayColor;
+
+            &:hover {
+                color: $redColor;
+            }
+        }
+
+    }
+
+}

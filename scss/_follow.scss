@@ -1,0 +1,74 @@
+.follow {
+    background: url(../img/backgrounds/follow.png) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin: -100px 0;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__item {
+        width: 16%;
+        text-align: center;
+
+        &:hover {
+
+            .follow__img {
+                opacity: 0;
+            }
+
+            .follow__img-hover {
+                opacity: 1;
+            }
+
+            i {
+                color: #fff;
+            }
+
+        }
+    }
+
+    &__icon {
+        display: flex;
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    &__img,
+    &__img-hover {
+        display: block;
+        max-width: 100%;
+        width: 72px;
+        height: 62px;
+        transition: all .2s linear;
+    }
+
+    &__img {
+        opacity: 1;
+
+        &-hover {
+            opacity: 0;
+            position: absolute;
+        }
+
+    }
+
+    i {
+        @include ps-centered;
+        color: $redColor;
+        font-size: 22px;
+    }
+
+    &__counter {
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+    }
+
+}
