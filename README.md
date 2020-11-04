@@ -1,2 +1,2 @@
-# creativia.github.com
+# Creativia
 Creativia - Bir sahifali vebsayt
