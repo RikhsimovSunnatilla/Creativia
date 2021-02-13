@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 700px;
+    background: url(../img/backgrounds/header.jpg) center -40px no-repeat;
+    background-size: cover;
+
+    .swiper-container {
+        max-width: 1030px;
+    }
+
+    &__intro {
+        width: 100%;
+        max-width: 1030px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .section__text {
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 50px;
+    }
+        
+    .btn.btn-primary {
+        margin-right: 30px;
+    }
+
+    .slider {
+        font-size: 45px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+
+        &:focus {
+            outline: 0;
+        }
+        
+        &--left {
+            left: 50px;
+        }
+
+        &--right {
+            right: 50px;
+        }
+
+        i {
+            color: $grayColor;
+
+            &:hover {
+                color: $redColor;
+            }
+        }
+
+    }
+
+}
